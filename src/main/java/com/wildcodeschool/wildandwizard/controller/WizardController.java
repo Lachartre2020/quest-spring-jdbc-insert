@@ -23,6 +23,7 @@ public class WizardController {
                              @RequestParam(required = false, defaultValue = "") String biography,
                              @RequestParam(required = false, defaultValue = "false") boolean muggle
     ) {
+    	System.out.println(firstName);
         model.addAttribute("wizard", repository.save(firstName, lastName,
                 birthday, birthPlace, biography, muggle));
 
